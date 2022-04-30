@@ -39,6 +39,14 @@ body
     margin: auto;
 }
 
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width:auto;
+    }
+}
+
 section h1, footer h1, nav a
 {
     font-family: Dayrom, serif;
@@ -116,6 +124,35 @@ nav a:hover
     border-bottom: 3px solid #760001;
 }
 
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width:auto;
+        text-align: left;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a 
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
 /* Banière */
 
 #banniere_image
@@ -162,6 +199,14 @@ nav a:hover
 .bouton_rouge img
 {
     border: 0;
+}
+
+@media all and (max-width: 1024px)
+{
+    #banniere_image
+    {
+        display: none;
+    }
 }
 
 /* Corps */
@@ -226,6 +271,37 @@ aside
 aside img
 {
     margin-right: 5px;
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside 
+    {
+        width:auto;
+        margin-bottom: 15px;
+    }
+
+    #fleche_bulle 
+    {
+        display: none;
+    }
+
+    #photo_zozor 
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+
+    aside p:last-child 
+    {
+        text-align: center;
+    }
 }
 
 /* Footer */
